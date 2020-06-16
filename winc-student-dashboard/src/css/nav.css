@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+
+.nav-sidebar {
+  position: absolute;
+ /* padding: 0 1.5vh 0 1.5vh; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* height: 80vh; */
+  width: 250px;
+  background: #fff;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.25);
+}
+
+.user-container {
+  padding: 25px;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  /* border: solid #4a90e2; */
+}
+
+.user-icon {
+  font-size: 40px;
+  color: #4a90e2;
+}
+
+.user-name {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a90e2;
+}
+
+.user-role {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.menu {
+  margin: 0;
+  padding: 25px;
+  list-style: none;
+}
+
+.menu-link {
+  display: block;
+  font-size: 18px;
+  padding: 15px;
+  color: #8c9ba7;
+  position: relative;
+  /* border: solid blue; */
+}
+
+.menu-link-active {
+  color: #4a90e2;
+}
+
+.menu-link:hover
+ {
+  color: #4a90e2;
+}
+
+.link-icon {
+  margin-right: 10px;
+}
+.link-titel {
+  display: inline-block;
+}
+
+.logout-btn-container{
+  position: absolute;
+  bottom: 1.5vh;
+  left: 1.5vh;
+  right: 1.5vh;
+}
+
+.logout_btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom-left-radius: 20px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.logout_btn:hover {
+  background: #41bbff;
+}
+
+

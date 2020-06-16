@@ -1,0 +1,99 @@
+.dashboard-component {
+  padding: 5vh 5% 5% 5%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 250px;
+  bottom: 10%;
+  margin: 0;
+  border: none;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+}
+
+.dashboard-title-container {
+  display: flex;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 5vh;
+  top: 7%;
+  align-items: center;
+}
+
+.dashboard-title {
+  color: #4a90e2;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-chart-container {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.main-chart-nav-container {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 1.5vh;
+  left: calc(250px + 1.5vh);
+  right: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+  background: #f1f4f7;
+}
+
+.main-chart-nav-buttons {
+  width: 15%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.main-chart-nav-buttons-active {
+  color: yellow;
+}
+
+.main-chart-nav-button-6 {
+  border-bottom-right-radius: 20px;
+}
+
+.main-chart-nav-buttons:hover {
+  background: #41bbff;
+  border: none;
+}
+
+.student-select-buttons-container {
+  z-index: 100;
+  margin: 0;
+  position: absolute;
+  top: 1.5vh;
+  left: calc(250px + 1.5vh);
+  right: 1.5vh;
+  display: flex;
+  justify-content: center;
+  background: #f1f4f7;
+}
+
+.student-select-buttons {
+  width: 5%;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
