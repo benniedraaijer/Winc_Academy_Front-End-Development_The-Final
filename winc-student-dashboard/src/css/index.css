@@ -24,23 +24,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-/* @media (orientation: portrait) {
-  .potrait-blocker {
-    z-index: 500;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #4a90e2;
-    visibility: visible;
-    border: #4a90e2;
-  }
-}
-
-@media (orientation: landscape) {
-  .potrait-blocker {
-    z-index: 500;
-    background: #4a90e2;
-    visibility: hidden;
-  }
-} */

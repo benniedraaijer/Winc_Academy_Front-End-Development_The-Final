@@ -80,8 +80,8 @@
   z-index: 100;
   margin: 0;
   position: absolute;
-  top: 1.5vh;
-  left: calc(250px + 1.5vh);
+  top: 3%;
+  left: calc(200px + 1.5vh);
   right: 1.5vh;
   display: flex;
   justify-content: center;
