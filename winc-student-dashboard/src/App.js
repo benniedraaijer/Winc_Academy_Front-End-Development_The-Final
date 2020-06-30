@@ -11,13 +11,11 @@ import MainChartHeatmap from "./components/Charts/MainChartHeatmap";
 import MainChartRadar from "./components/Charts/MainChartRadar";
 import MainChartScatter from "./components/Charts/MainChartScatter";
 import StudentSelect from "./components/StudentSelector";
-import PortraitBlocker from './components/PortraitBlocker'
 
 export const App = () => {
   return (
     <MainChartProvider>
       <Router>
-        {/* <PortraitBlocker/> */}
         <StudentSelect />
         <SideNav />
         <MainChartNav />
