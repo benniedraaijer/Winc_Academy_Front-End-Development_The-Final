@@ -42,14 +42,16 @@ export const mainChartData = () => {
       (item) => Object.values(item)[1] === assignment
     );
 
+    const assigmentLenght = assignments.length;
+
     return {
       assigment: assignment,
       difficulty:
         assignments.reduce((prev, curr) => prev + curr.difficult, 0) /
-        assignments.length,
+        assigmentLenght,
       joy:
         assignments.reduce((prev, curr) => prev + curr.joy, 0) /
-        assignments.length,
+        assigmentLenght,
     };
   });
 
