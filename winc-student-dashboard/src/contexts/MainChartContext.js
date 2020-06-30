@@ -1,6 +1,5 @@
 import React from "react";
-import { mainChartData } from "../data/datamanager";
-import { getUniqueStudentResult } from "../data/datamanager";
+import { mainChartData, getUniqueStudentResult } from "../data/datamanager";
 
 const assigmentAllStudents = [];
 const difficultyAllStudents = [];
@@ -26,60 +25,13 @@ export default class MainChartProvider extends React.Component {
           horizontal: false,
           columnWidth: "70%",
           barHeight: "100%",
-          distributed: false,
-          rangeBarOverlap: true,
-
-          dataLabels: {
-            position: "top",
-
-            hideOverflowingLabels: false,
-          },
         },
       },
 
       legend: {
-        show: true,
-        showForSingleSeries: false,
-        showForNullSeries: true,
-        showForZeroSeries: true,
-        position: "bottom",
-        horizontalAlign: "center",
-        floating: false,
         fontSize: "14px",
-        fontFamily: "Helvetica, Arial",
-        fontWeight: 400,
-        formatter: undefined,
-        inverseOrder: false,
-        width: undefined,
-        height: undefined,
-        tooltipHoverFormatter: undefined,
-        offsetX: 0,
-        offsetY: 0,
-        labels: {
-          colors: undefined,
-          useSeriesColors: false,
-        },
         markers: {
-          width: 12,
-          height: 12,
-          strokeWidth: 0,
-          strokeColor: "#fff",
-          fillColors: undefined,
-          radius: 12,
-          customHTML: undefined,
-          onClick: undefined,
-          offsetX: 0,
-          offsetY: 0,
-        },
-        itemMargin: {
-          horizontal: 5,
-          vertical: 0,
-        },
-        onItemClick: {
-          toggleDataSeries: true,
-        },
-        onItemHover: {
-          highlightDataSeries: true,
+          radius: 3,
         },
       },
 
@@ -90,9 +42,7 @@ export default class MainChartProvider extends React.Component {
 
       xaxis: {
         type: "category",
-
         categories: assigmentAllStudents,
-
         labels: {
           show: true,
           showDuplicates: false,
@@ -102,7 +52,6 @@ export default class MainChartProvider extends React.Component {
           hideOverlappingLabels: true,
           rotate: -90,
           rotateAlways: true,
-          offsetY: 0,
         },
       },
     },
