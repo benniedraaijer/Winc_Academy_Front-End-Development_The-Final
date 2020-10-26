@@ -22,7 +22,12 @@ export const SideNavMenu = () => {
         <i className="link-icon fas fa-user-graduate"></i>
         <span className="title">Students</span>
       </NavLink>
-      <NavLink exact to="settings" className="menu-link" activeClassName="menu-link">
+      <NavLink
+        exact
+        to="settings"
+        className="menu-link"
+        activeClassName="menu-link"
+      >
         <i className="link-icon fas fa-cog"></i>
         <span className="title">Settings</span>
       </NavLink>
