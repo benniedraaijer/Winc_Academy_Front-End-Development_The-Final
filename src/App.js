@@ -11,6 +11,7 @@ import MainChartHeatmap from "./components/Charts/MainChartHeatmap";
 import MainChartRadar from "./components/Charts/MainChartRadar";
 import MainChartScatter from "./components/Charts/MainChartScatter";
 import StudentSelect from "./components/StudentSelector";
+import { Settings } from "./components/Settings/Settings";
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
         <MainChartNav />
         <Switch>
           <Route path="/students" exact component={Students} />
+          <Route path="/settings" exact component={Settings} />
           <Route path="/" exact component={MainChart} />
           <Route path="/main-line" exact component={MainChartLine} />
           <Route path="/main-area" exact component={MainChartArea} />
