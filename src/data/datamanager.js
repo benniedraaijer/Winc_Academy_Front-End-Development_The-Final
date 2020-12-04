@@ -1,6 +1,4 @@
-import { data } from "./database";
-
-console.log(data);
+import { data } from "./database.js";
 
 const students = [];
 const assignments = [];
@@ -13,12 +11,8 @@ export const getStudents = () => Array.from(new Set(students));
 export const getAssignments = () => Array.from(new Set(assignments));
 
 /////Get Unique Students Objects
-export const getUniqueStudentResult = student => {
-  const studentscore = data.filter(item => {
-    return item.student === student.student;
-  });
-  return studentscore;
-};
+export const getUniqueStudentResult = student =>
+  data.filter(item => item.student === student.student);
 
 export const mainChartData = () => {
   const ChartData = getAssignments().map(assignment => {
