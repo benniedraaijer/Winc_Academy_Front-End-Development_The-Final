@@ -6,7 +6,10 @@ export default class StudentSelect extends Component {
   static contextType = MainChartContext;
 
   render() {
+    // Get all the students from the data manager
     const students = getStudents();
+
+    // Create a select all button
     const { selectStudent } = this.context;
     return (
       <div className='student-select-buttons-container'>
@@ -17,6 +20,8 @@ export default class StudentSelect extends Component {
           key='all'>
           All
         </button>
+
+        {/* Create select button for each stundent */}
         {students.map(student => (
           <button
             onClick={() => selectStudent({ student })}
