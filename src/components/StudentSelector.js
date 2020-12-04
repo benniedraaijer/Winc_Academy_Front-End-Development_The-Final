@@ -9,22 +9,20 @@ export default class StudentSelect extends Component {
     const students = getStudents();
     const { selectStudent } = this.context;
     return (
-      <div className="student-select-buttons-container">
+      <div className='student-select-buttons-container'>
         <button
-          autofocus="true"
+          autofocus='true'
           onClick={() => selectStudent("all")}
-          className="student-select-buttons "
-          key="all"
-        >
+          className='student-select-buttons '
+          key='all'>
           All
         </button>
-        {students.map((student) => (
+        {students.map(student => (
           <button
             onClick={() => selectStudent({ student })}
-            className="student-select-buttons"
+            className='student-select-buttons'
             key={student}
-            value={student}
-          >
+            value={student}>
             {student}
           </button>
         ))}
