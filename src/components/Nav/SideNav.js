@@ -5,11 +5,11 @@ import { SideNavUser } from "./SideNavUser";
 
 export const SideNav = () => {
   return (
-    <div className="nav-sidebar">
+    <div className='nav-sidebar'>
       <SideNavUser />
       <SideNavMenu />
-      <div className="logout-btn-container">
-        <button className="logout_btn">logout</button>
+      <div className='logout-btn-container'>
+        <button className='logout_btn'>logout</button>
       </div>
     </div>
   );

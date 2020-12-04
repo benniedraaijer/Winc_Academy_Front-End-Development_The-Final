@@ -5,7 +5,7 @@ const assigmentAllStudents = [];
 const difficultyAllStudents = [];
 const joyAllStudents = [];
 
-mainChartData().forEach((item) => {
+mainChartData().forEach(item => {
   assigmentAllStudents.push(Object.values(item)[0]);
   difficultyAllStudents.push(Object.values(item)[1]);
   joyAllStudents.push(Object.values(item)[2]);
@@ -68,7 +68,7 @@ export default class MainChartProvider extends React.Component {
     ],
   };
 
-  selectStudent = (student) => {
+  selectStudent = student => {
     const assigments = [];
     const difficulty = [];
     const joy = [];
@@ -91,7 +91,7 @@ export default class MainChartProvider extends React.Component {
         ],
       });
     } else {
-      getUniqueStudentResult(student).forEach((item) => {
+      getUniqueStudentResult(student).forEach(item => {
         assigments.push(Object.values(item)[1]);
         difficulty.push(Object.values(item)[2]);
         joy.push(Object.values(item)[3]);
@@ -119,8 +119,7 @@ export default class MainChartProvider extends React.Component {
   render() {
     return (
       <MainChartContext.Provider
-        value={{ ...this.state, selectStudent: this.selectStudent }}
-      >
+        value={{ ...this.state, selectStudent: this.selectStudent }}>
         {this.props.children}
       </MainChartContext.Provider>
     );

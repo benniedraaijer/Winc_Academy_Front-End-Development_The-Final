@@ -15,12 +15,12 @@ export default class MainChartRadar extends Component {
   render() {
     return (
       <>
-        <div className="dashboard-component">
-          <div className="main-chart-container">
+        <div className='dashboard-component'>
+          <div className='main-chart-container'>
             <Chart
               type={this.state.type}
               series={this.context.series}
-              height="100%"
+              height='100%'
               options={this.context.options}
             />
           </div>

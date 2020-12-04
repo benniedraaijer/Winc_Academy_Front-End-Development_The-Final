@@ -30,14 +30,14 @@ export const App = () => {
         <SideNav />
         <MainChartNav />
         <Switch>
-          <Route path='/students' exact component={Students} />
-          <Route path='/settings' exact component={Settings} />
           <Route path='/' exact component={MainChart} />
           <Route path='/main-line' exact component={MainChartLine} />
           <Route path='/main-area' exact component={MainChartArea} />
           <Route path='/main-heatmap' exact component={MainChartHeatmap} />
           <Route path='/main-radar' exact component={MainChartRadar} />
           <Route path='/main-scatter' exact component={MainChartScatter} />
+          <Route path='/students' exact component={Students} />
+          <Route path='/settings' exact component={Settings} />
         </Switch>
       </Router>
     </MainChartProvider>
