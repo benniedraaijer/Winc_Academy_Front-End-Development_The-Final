@@ -3359,7 +3359,7 @@ export const data = [
     "Hoe moeilijk vond je deze opdracht?": 3,
     "Hoe leuk vond je deze opdracht?": 3,
   },
-].map((item) => {
+].map(item => {
   return {
     student: item["Wie ben je?"],
     assignment: item["Welke opdracht of welk project lever je nu in?"],
