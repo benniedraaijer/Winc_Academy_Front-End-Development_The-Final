@@ -1,7 +1,6 @@
 import { data } from "./database";
 
 const students = [];
-let uniqueStudent;
 const assignments = [];
 const uniqueAssignments = [];
 
@@ -9,10 +8,7 @@ data.forEach(item => students.push(Object.values(item)[0]));
 data.forEach(item => assignments.push(Object.values(item)[1]));
 
 /////Get Unique Student Names
-export const getStudents = () => {
-  uniqueStudent = Array.from(new Set(students));
-  return uniqueStudent;
-};
+export const getStudents = () => Array.from(new Set(students));
 
 /////Get Unique Students Objects
 export const getUniqueStudentResult = student => {
