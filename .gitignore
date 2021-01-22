@@ -5,10 +5,10 @@ node_modules
 package-lock.json
 
 # testing
-/coverage
+coverage
 
 # production
-/build
+build
 
 # misc
 .DS_Store
@@ -31,12 +31,4 @@ winc-student-dashboard/build/service-worker.js
 winc-student-dashboard/build/index.html
 winc-student-dashboard/build/favicon.png
 winc-student-dashboard/build/asset-manifest.json
-
 winc-student-dashboard/build
-# winc-student-dashboard/build/asset-manifest.json
-# winc-student-dashboard/build/static/js/runtime-main.f0909bdc.js.map
-# winc-student-dashboard/build/static/js/runtime-main.f0909bdc.js
-# winc-student-dashboard/build/service-worker.js
-# winc-student-dashboard/build/index.html
-# winc-student-dashboard/build/favicon.png
-# winc-student-dashboard/build/asset-manifest.json
